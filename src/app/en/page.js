@@ -18,7 +18,7 @@ export default function ENHome() {
         <nav className="py-10 mb-12 flex justify-between">
           <h1 className='text-xl'>developed by juanca</h1>
           <div className='flex items-center' >
-            <Link href="/" className='ml-2'>
+            <Link href="./" className='ml-2'>
               <div className='flex flex-col items-center'>
                 <Image src={spanish} style={{ height: '20px', width: '30px', minWidth: "30px" }} />
                 <p>ES</p>
