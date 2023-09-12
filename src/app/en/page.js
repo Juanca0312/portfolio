@@ -1,30 +1,30 @@
 import { AiFillMail, AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import Image from 'next/image';
-import me from '../../public/avatar.png';
-import pokeapp from '../../public/pokeapp.png';
-import gymapp1 from '../../public/gymapp1.jpeg';
-import gymapp2 from '../../public/gymapp2.jpeg';
-import arnatomyMain from '../../public/arnatomy-main.png';
-import kusi1 from '../../public/kusi1.jpg';
-import kusi2 from '../../public/kusi2.jpg';
-import english from '../../public/english.jpg';
+import me from '../../../public/avatar.png';
+import pokeapp from '../../../public/pokeapp.png';
+import gymapp1 from '../../../public/gymapp1.jpeg';
+import gymapp2 from '../../../public/gymapp2.jpeg';
+import arnatomyMain from '../../../public/arnatomy-main.png';
+import kusi1 from '../../../public/kusi1.jpg';
+import kusi2 from '../../../public/kusi2.jpg';
+import spanish from '../../../public/spanish.png';
 import Link from 'next/link';
 
 
-export default function Home() {
+export default function ENHome() {
   return (
     <main className='bg-white px-10 md:px-40'>
       <section className="min-h-screen">
         <nav className="py-10 mb-12 flex justify-between">
-          <h1 className='text-xl'>desarrollado por juanca</h1>
+          <h1 className='text-xl'>developed by juanca</h1>
           <div className='flex items-center' >
-            <Link href="/en" className='ml-2'>
+            <Link href="/" className='ml-2'>
               <div className='flex flex-col items-center'>
-                <Image src={english} style={{ height: '20px', width: '30px', minWidth: "30px" }} />
-                <p>EN</p>
+                <Image src={spanish} style={{ height: '20px', width: '30px', minWidth: "30px" }} />
+                <p>ES</p>
               </div>
             </Link>
-            <a href="./cv.pdf" target="_blank" className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-2 py-2 rounded-md ml-8 text-center'>Descargar CV</a>
+            <a href="./cv-en.pdf" target="_blank" className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-2 py-2 rounded-md ml-8 text-center'>Resume</a>
           </div>
 
         </nav>
@@ -33,15 +33,13 @@ export default function Home() {
           <h2 className='text-5xl py-2 text-teal-600 font-medium'>Juan Carlos Hernández</h2>
           <h3 className='text-2xl py-2'>Mobile Developer</h3>
           <p className='text-md py-5 leading-7 text-gray-800'>
-            Bachiller en Ingeniería de
-            Software apasionado por el desarrollo móvil,
-            con experiencia de desarrollo iOS y Flutter.
+            Bachelor in Software Engineering, passionate about mobile development, experienced in developing for iOS and Flutter.
           </p>
         </div>
 
         <div className='text-5xl flex justify-center gap-16 py-3 text-gray-800'>
 
-          <a target="_blank" href="https://linkedin.com/in/juan-carlos-hernandez-castillo"><AiFillLinkedin /></a>
+          <a target="_blank" href="https://www.linkedin.com/in/juan-carlos-hernandez-castillo/?locale=en_US"><AiFillLinkedin /></a>
           <a target="_blank" href="https://github.com/Juanca0312"><AiFillGithub /></a>
           <a target="_blank" href="mailto:jchernandez0312@gmail.com"><AiFillMail /></a>
 
@@ -55,9 +53,9 @@ export default function Home() {
 
       <section>
         <div>
-          <h3 className='text-3xl py-1'>Proyectos</h3>
+          <h3 className='text-3xl py-1'>Projects</h3>
           <p className='text-md py-5 leading-7 text-gray-800'>
-            Algunos de mis proyectos relevantes realizados a lo largo de mi carrera profesional y universitaria.
+            Some of my relevant projects carried out during my professional and academic career.
           </p>
 
 
@@ -67,9 +65,7 @@ export default function Home() {
                 <h3 className="text-lg font-medium pt-8 pb-2 "><span className='text-teal-600'>AR</span>natomy</h3>
 
                 <p className="py-2">
-                  Proyecto de tesis que busca generar
-                  una alternativa para el aprendizaje interactivo de anatomia
-                  humana con el uso de realidad aumentada.
+                  Graduation project that aims to create an alternative for interactive learning of human anatomy using augmented reality.
                 </p>
                 <div className='flex justify-center pt-2'>
                   <iframe className='hidden md:block' height="300"
@@ -82,7 +78,7 @@ export default function Home() {
                     </a>
                   </div>
                 </div>
-                <h4 className="pt-4 pb-2 text-teal-600">Tecnologías</h4>
+                <h4 className="pt-4 pb-2 text-teal-600">Technologies</h4>
                 <p className="text-gray-800 py-1">Mobile: Flutter/Dart, ARCore</p>
                 <p className="text-gray-800">Backend: Java / Spring Boot, MySQL</p>
                 <div className='text-5xl flex justify-center gap-16 py-3 text-gray-800'>
@@ -95,14 +91,14 @@ export default function Home() {
               <div className="text-center shadow-lg px-10 py-5 rounded-xl my-10 dark:bg-white flex-1 md:max-w-md">
                 <h3 className="text-lg font-medium pt-8 pb-2 "><span className='text-teal-600'>Poke</span>App</h3>
                 <p className="py-2">
-                  Aplicación móvil iOS que lista, filtra y detalla Pokémons. El proyecto utiliza el API open source de PokeAPI e implementa las vistas de manera programática.
+                  iOS mobile application that lists, filters and details Pokémons. The project uses the open source PokeAPI API and implements the views programmatically.
                 </p>
                 <div className='flex justify-center gap-2'>
                   <Image src={pokeapp} height={300} />
                 </div>
-                <h4 className="pt-4 pb-2 text-teal-600">Tecnologías</h4>
+                <h4 className="pt-4 pb-2 text-teal-600">Technologies</h4>
                 <p className="text-gray-800 py-1">Mobile: iOS/Swift, Combine, Unit Testing</p>
-                <p className="text-gray-800 py-1">Arquitectura: MVVM</p>
+                <p className="text-gray-800 py-1">Architecture: MVVM</p>
                 <div className='text-5xl flex justify-center gap-16 py-3 text-gray-800'>
                   <a target="_blank" href="https://github.com/Juanca0312/PokeApp"><AiFillGithub /></a>
                 </div>
@@ -114,13 +110,13 @@ export default function Home() {
                 <h3 className="text-lg font-medium pt-8 pb-2 "><span className='text-teal-600'>Kusikay</span> App</h3>
 
                 <p className="py-2">
-                  Aplicación móvil elaborada para el voluntariado Kusikay, con la finalidad de gestionar la asistencia e informes de clase.
+                  Mobile application developed for the Kusikay volunteer programme to manage attendance and class reports.
                 </p>
                 <div className='flex justify-center pt-2'>
                   <Image src={kusi1} height={300} />
                   <Image src={kusi2} height={300} />
                 </div>
-                <h4 className="pt-4 pb-2 text-teal-600">Tecnologías</h4>
+                <h4 className="pt-4 pb-2 text-teal-600">Technologies</h4>
                 <p className="text-gray-800 py-1">Mobile: Flutter/Dart</p>
                 <p className="text-gray-800">Backend: Java / Spring Boot, MySQL</p>
                 <div className='text-5xl flex justify-center gap-16 py-3 text-gray-800'>
@@ -133,15 +129,14 @@ export default function Home() {
               <div className="text-center shadow-lg px-10 py-5 rounded-xl my-10 dark:bg-white flex-1 md:max-w-md">
                 <h3 className="text-lg font-medium pt-8 pb-2 "><span className='text-teal-600'>Gym</span>App</h3>
                 <p className="py-2">
-                  Aplicación móvil iOS que ayuda a crear una rutina con ejercicios. El proyecto guarda de manera local los ejercicios y rutinas creadas con ayuda de CoreData.
-                </p>
+                  iOS mobile application that helps to create a routine of exercises. The app stores the exercises and routines created with CoreData.                </p>
                 <div className='flex justify-center'>
                   <Image src={gymapp1} height={300} />
                   <Image src={gymapp2} height={300} />
                 </div>
-                <h4 className="pt-4 pb-2 text-teal-600">Tecnologías</h4>
+                <h4 className="pt-4 pb-2 text-teal-600">Technologies</h4>
                 <p className="text-gray-800 py-1">Mobile: iOS/Swift, CoreData</p>
-                <p className="text-gray-800 py-1">Arquitectura: MVC</p>
+                <p className="text-gray-800 py-1">Architecture: MVC</p>
                 <div className='text-5xl flex justify-center gap-16 py-3 text-gray-800'>
                   <a target="_blank" href="https://github.com/Juanca0312/GymApp"><AiFillGithub /></a>
 
